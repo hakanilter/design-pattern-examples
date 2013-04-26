@@ -12,10 +12,8 @@ import strategy.base.Animal;
 import strategy.base.Environment;
 
 /**
- * 
  * If, else, switch gibi ifadeler coklasmissa burada 
  * strategy pattern kullanmaya uygun olabilir
- * 
  */
 public class StrategyPatternTest 
 {
