@@ -14,6 +14,8 @@ import decorator.Tea;
  * getirilmesi gerektiginde bir suru inheritance yapmak yerine 
  * Decorator kullanilabilir
  * 
+ * Ornek: Java I/O API
+ * 
  */
 public class DecoratorPatternTest 
 {
