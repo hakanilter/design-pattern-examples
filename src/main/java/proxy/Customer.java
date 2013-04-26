@@ -4,6 +4,12 @@ public class Customer
 {
 	private String name, surname;
 
+	public Customer(String name, String surname) 
+	{
+		this.name = name;
+		this.surname = surname;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -18,5 +24,10 @@ public class Customer
 
 	public void setSurname(String surname) {
 		this.surname = surname;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [name=" + name + ", surname=" + surname + "]";
 	}
 }

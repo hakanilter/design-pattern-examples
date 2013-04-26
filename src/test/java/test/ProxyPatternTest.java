@@ -1,6 +1,13 @@
 package test;
 
+import org.junit.Ignore;
 import org.junit.Test;
+
+import proxy.Client;
+import proxy.Customer;
+import proxy.CustomerServiceImpl;
+import proxy.CustomerServiceSecurityProxy;
+import proxy.CustomerServiceTxProxy;
 
 /**
  * 
@@ -16,9 +23,21 @@ import org.junit.Test;
  */
 public class ProxyPatternTest
 {
+	@Ignore
 	@Test
-	public void test()
+	public void testWithoutTransaction()
 	{
-		
+		Client client = new Client();
+		client.setCustomerService(new CustomerServiceImpl());
+		client.update(new Customer("Dave", "Mustaine"));
+	}
+	
+	@Test 
+	public void testWithSecurityAndTransaction()
+	{
+		Client client = new Client();
+		client.setCustomerService(new CustomerServiceTxProxy(
+				new CustomerServiceSecurityProxy(new CustomerServiceImpl())));
+		client.update(new Customer("Dave", "Mustaine"));
 	}
 }
