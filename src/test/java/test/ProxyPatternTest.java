@@ -47,6 +47,7 @@ public class ProxyPatternTest
 		client.update(new Customer("Richard", "Dawkins"));
 	}
 	
+	// interface based proxy example
 	@Test
 	public void testDynamicProxy()
 	{
