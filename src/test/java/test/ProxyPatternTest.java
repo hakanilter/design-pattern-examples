@@ -1,13 +1,17 @@
 package test;
 
+import java.lang.reflect.Proxy;
+
 import org.junit.Ignore;
 import org.junit.Test;
 
 import proxy.Client;
 import proxy.Customer;
+import proxy.CustomerService;
 import proxy.CustomerServiceImpl;
 import proxy.CustomerServiceSecurityProxy;
 import proxy.CustomerServiceTxProxy;
+import proxy.TxProxyHandler;
 
 /**
  * 
@@ -25,19 +29,36 @@ public class ProxyPatternTest
 {
 	@Ignore
 	@Test
-	public void testWithoutTransaction()
+	public void testWithoutSecurityAndTransaction()
 	{
 		Client client = new Client();
 		client.setCustomerService(new CustomerServiceImpl());
 		client.update(new Customer("Dave", "Mustaine"));
 	}
 	
+	@Ignore
 	@Test 
 	public void testWithSecurityAndTransaction()
 	{
 		Client client = new Client();
 		client.setCustomerService(new CustomerServiceTxProxy(
 				new CustomerServiceSecurityProxy(new CustomerServiceImpl())));
-		client.update(new Customer("Dave", "Mustaine"));
+		client.update(new Customer("Richard", "Dawkins"));
+	}
+	
+	@Test
+	public void testDynamicProxy()
+	{
+		CustomerService target = new CustomerServiceImpl();
+		TxProxyHandler txProxyHandler = new TxProxyHandler(target);
+		
+		CustomerService customerService = (CustomerService) Proxy.newProxyInstance(
+				CustomerService.class.getClassLoader(), 
+				new Class[] {CustomerService.class}, 
+				txProxyHandler);
+		
+		Client client = new Client();
+		client.setCustomerService(customerService);
+		client.update(new Customer("Jenna", "Jameson"));
 	}
 }
