@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import adapter.GeneralElectricLampAdapter;
 import adapter.Lamp;
-import adapter.PhillipsLampAdapter;
+import adapter.PhilipsLampAdapter;
 
 /**
  *
@@ -21,7 +21,7 @@ public class AdapterPatternTest
 		lamp1.on();
 		lamp1.off();
 		
-		Lamp lamp2 = new PhillipsLampAdapter();
+		Lamp lamp2 = new PhilipsLampAdapter();
 		lamp2.on();
 		lamp2.off();
 	}
