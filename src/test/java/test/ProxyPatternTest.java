@@ -11,6 +11,7 @@ import proxy.CustomerService;
 import proxy.CustomerServiceImpl;
 import proxy.CustomerServiceSecurityProxy;
 import proxy.CustomerServiceTxProxy;
+import proxy.SecurityProxyHandler;
 import proxy.TxProxyHandler;
 
 /**
@@ -50,12 +51,20 @@ public class ProxyPatternTest
 	public void testDynamicProxy()
 	{
 		CustomerService target = new CustomerServiceImpl();
-		TxProxyHandler txProxyHandler = new TxProxyHandler(target);
 		
+		// add transaction proxy handler
+		TxProxyHandler txProxyHandler = new TxProxyHandler(target);
 		CustomerService customerService = (CustomerService) Proxy.newProxyInstance(
 				CustomerService.class.getClassLoader(), 
 				new Class[] {CustomerService.class}, 
 				txProxyHandler);
+		
+		// add security proxy handler
+		SecurityProxyHandler securityProxyHandler = new SecurityProxyHandler(customerService);
+		customerService = (CustomerService) Proxy.newProxyInstance(
+				CustomerService.class.getClassLoader(), 
+				new Class[] {CustomerService.class}, 
+				securityProxyHandler);
 		
 		Client client = new Client();
 		client.setCustomerService(customerService);
