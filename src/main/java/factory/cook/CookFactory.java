@@ -5,7 +5,7 @@ import factory.southern.SouthernCook;
 
 public final class CookFactory 
 {
-	public static Cook getNorthernCook() {
+	public static Cook getNorhernCook() {
 		return new NorthernCook();
 	}
 	
