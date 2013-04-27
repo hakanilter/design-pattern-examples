@@ -24,3 +24,4 @@ public final class EagerInitializationSingletonCarFactory
         return new Car();
     }
 }
+
