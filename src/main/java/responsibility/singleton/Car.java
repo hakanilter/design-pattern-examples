@@ -1,8 +1,8 @@
 package responsibility.singleton;
 
-public class Car
+public class Car 
 {
-    Car() {
-
-    }
+	Car() {
+		
+	}
 }
