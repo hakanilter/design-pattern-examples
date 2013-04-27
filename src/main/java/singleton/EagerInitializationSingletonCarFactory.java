@@ -1,15 +1,15 @@
 package singleton;
 
-public final class CarFactory 
+public final class EagerInitializationSingletonCarFactory 
 {
 	// eager initialization
-	private static CarFactory instance = new CarFactory();
+	private static EagerInitializationSingletonCarFactory instance = new EagerInitializationSingletonCarFactory();
 	
-	public static CarFactory getInstance() {
+	public static final EagerInitializationSingletonCarFactory getInstance() {
 		return instance;
 	}
 	
-	private CarFactory() 
+	private EagerInitializationSingletonCarFactory() 
 	{
 		System.out.println("building a new factory...");
 		try {
