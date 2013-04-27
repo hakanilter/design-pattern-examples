@@ -22,7 +22,6 @@ public class EvenNumbersIterator implements Iterator<Integer>
 	{
 		Integer value = null;
 		do {
-			value = null;
 			value = data.get(currentIndex++);
 		} while (value % 2 != 0);
 		return value;
