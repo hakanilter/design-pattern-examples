@@ -2,8 +2,8 @@ package test;
 
 import org.junit.Test;
 
-import singleton.Car;
-import singleton.EagerInitializationSingletonCarFactory;
+import responsibility.singleton.Car;
+import responsibility.singleton.EagerInitializationSingletonCarFactory;
 
 /**
  * 
