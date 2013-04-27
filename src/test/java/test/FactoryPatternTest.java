@@ -2,8 +2,8 @@ package test;
 
 import org.junit.Test;
 
-import factory.cook.Cook;
-import factory.cook.CookFactory;
+import constructionPatterns.factory.cook.Cook;
+import constructionPatterns.factory.cook.CookFactory;
 
 /**
  * 

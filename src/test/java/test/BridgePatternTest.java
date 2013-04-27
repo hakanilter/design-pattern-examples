@@ -2,10 +2,10 @@ package test;
 
 import org.junit.Test;
 
-import bridge.ImageEditor1;
-import bridge.ImageEditor2;
-import bridge.Rectangle;
-import bridge.Triangle;
+import interfacePatterns.bridge.ImageEditor1;
+import interfacePatterns.bridge.ImageEditor2;
+import interfacePatterns.bridge.Rectangle;
+import interfacePatterns.bridge.Triangle;
 
 /**
  * 

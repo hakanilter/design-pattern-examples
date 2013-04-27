@@ -4,11 +4,11 @@ import java.math.BigDecimal;
 
 import org.junit.Test;
 
-import state.antipattern.DummyCoffeeMachine;
-import state.common.Coffee;
-import state.common.CoffeeMachine;
-import state.common.CoffeeType;
-import state.pattern.UltimateCoffeeMachine;
+import operationPatterns.state.antipattern.DummyCoffeeMachine;
+import operationPatterns.state.common.Coffee;
+import operationPatterns.state.common.CoffeeMachine;
+import operationPatterns.state.common.CoffeeType;
+import operationPatterns.state.pattern.UltimateCoffeeMachine;
 
 /**
  * 
