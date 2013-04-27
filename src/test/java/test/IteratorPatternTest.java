@@ -19,7 +19,7 @@ public class IteratorPatternTest
 	public void test()
 	{
 		List<Integer> data = new ArrayList<Integer>();
-		for (int i = 0; i < 20; i++) {
+		for (int i = 0; i < 21; i++) {
 			data.add(i);
 		}
 		
