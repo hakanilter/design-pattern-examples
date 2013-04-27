@@ -21,7 +21,7 @@ public class ObserverPatternTest
 	public void test()
 	{
 		NewsAgency newsAgency = new NewsAgency();
-		NewsPaper newsPaper = new NewsPaper();
+		NewsPaper newsPaper = new NewsPaper(newsAgency); // mediator
 		NewsSite newsSite = new NewsSite();
 		
 		newsAgency.addObserver(newsPaper);
@@ -29,5 +29,8 @@ public class ObserverPatternTest
 		
 		newsAgency.addObserver(newsSite);
 		newsAgency.notifyRecentNews("this is news 2");
+		
+		// mediator example: publish news from news paper
+		newsPaper.notifyRecentNews("this is the news from news paper");
 	}
 }

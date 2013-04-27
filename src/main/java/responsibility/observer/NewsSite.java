@@ -1,9 +1,8 @@
 package responsibility.observer;
 
 import java.util.Observable;
-import java.util.Observer;
 
-public class NewsSite implements Observer 
+public class NewsSite implements Subscriber 
 {
 	@Override
 	public void update(Observable o, Object arg) {

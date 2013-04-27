@@ -15,7 +15,6 @@ package test;
  * {@link ObserverPatternTest}
  * 
  */
-public class MediatorPatternTest 
-{
+public class MediatorPatternTest {
 
 }

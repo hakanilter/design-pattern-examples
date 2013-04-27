@@ -1,10 +1,13 @@
 package responsibility.observer;
 
 import java.util.Observable;
-import java.util.Observer;
 
-public class NewsPaper implements Observer
+public class NewsPaper extends NewsFeed
 {
+	public NewsPaper(NewsAgency mediator) {
+		super(mediator);
+	}
+
 	@Override
 	public void update(Observable o, Object arg) {
 		System.out.println("newspaper notified: " + arg);
