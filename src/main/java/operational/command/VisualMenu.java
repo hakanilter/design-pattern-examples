@@ -33,12 +33,4 @@ public class VisualMenu extends JFrame
 		
 		return this;
 	}
-	
-	public static void main(String[] args) 
-	{
-		VisualMenu menu = new VisualMenu(3);
-		menu.addCommand(new OrderDrinkCommand())
-			.addCommand(new OrderFoodCommand());
-		menu.setVisible(true);
-	}
 }
