@@ -23,7 +23,7 @@ public abstract class DBTemplate<T>
 		try {
 			connection = DriverManager.getConnection("jdbc:hsql://localhost", "sa", "");
 			stmt = connection.createStatement();
-			stmt.executeQuery(sql);
+			rs = stmt.executeQuery(sql);
 			while (rs.next()) {
 				T object = processRow(rs);
 				if (object != null) {
