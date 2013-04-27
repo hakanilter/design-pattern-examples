@@ -7,7 +7,7 @@ public class Context
 	private StringTokenizer tokens;
 	
 	public Context(String input) {
-	
+		tokens = new StringTokenizer(input, "{},:", false);
 	}
 	
 	public String nextToken() {
