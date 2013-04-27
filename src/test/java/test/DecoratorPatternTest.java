@@ -2,11 +2,11 @@ package test;
 
 import org.junit.Test;
 
-import decorator.Coffee;
-import decorator.Drink;
-import decorator.MixWithIce;
-import decorator.MixWithMilk;
-import decorator.Tea;
+import extensional.decorator.Coffee;
+import extensional.decorator.Drink;
+import extensional.decorator.MixWithIce;
+import extensional.decorator.MixWithMilk;
+import extensional.decorator.Tea;
 
 /**
  *
