@@ -2,22 +2,33 @@ design-pattern-examples
 =======================
 
 Construction Patterns
+ - Builder
+ - Factory
+ - Memento
+ - Prototype
 
 Extension Pattrens
+ - Decorator
+ - Iterator
+ - Visitor
 
 Interface Patterns
+ - Adaptor
+ - Bridge
+ - Composite
+ - Facade
 
 Operation Patterns
- - command
- - interpreter
- - state
- - strategy
- - template
+ - Command
+ - Interpreter
+ - State
+ - Strategy
+ - Template
 
 Responsibility Patterns
- - chain of Responsibility
- - flyweight
- - mediator
- - observer
- - proxy
- - singleton
+ - Chain of Responsibility
+ - Flyweight
+ - Mediator
+ - Observer
+ - Proxy
+ - Singleton
