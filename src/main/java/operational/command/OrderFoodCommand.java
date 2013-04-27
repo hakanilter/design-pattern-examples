@@ -1,4 +1,4 @@
-package command;
+package operational.command;
 
 public class OrderFoodCommand implements Command 
 {

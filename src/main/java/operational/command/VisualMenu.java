@@ -1,4 +1,4 @@
-package command;
+package operational.command;
 
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
