@@ -1,4 +1,4 @@
-design-pattern-examples
+Design Pattern Examples
 =======================
 
 Construction Patterns
@@ -7,7 +7,7 @@ Construction Patterns
  - Memento
  - Prototype
 
-Extension Pattrens
+Extension Patterns
  - Decorator
  - Iterator
  - Visitor
