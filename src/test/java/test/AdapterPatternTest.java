@@ -2,9 +2,9 @@ package test;
 
 import org.junit.Test;
 
-import interfacePatterns.adapter.GeneralElectricLampAdapter;
-import interfacePatterns.adapter.Lamp;
-import interfacePatterns.adapter.PhilipsLampAdapter;
+import interfaces.adapter.GeneralElectricLampAdapter;
+import interfaces.adapter.Lamp;
+import interfaces.adapter.PhilipsLampAdapter;
 
 /**
  *

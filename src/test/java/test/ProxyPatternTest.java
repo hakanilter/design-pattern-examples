@@ -5,14 +5,14 @@ import java.lang.reflect.Proxy;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import responsibilityPatterns.proxy.Client;
-import responsibilityPatterns.proxy.Customer;
-import responsibilityPatterns.proxy.CustomerService;
-import responsibilityPatterns.proxy.CustomerServiceImpl;
-import responsibilityPatterns.proxy.CustomerServiceSecurityProxy;
-import responsibilityPatterns.proxy.CustomerServiceTxProxy;
-import responsibilityPatterns.proxy.SecurityProxyHandler;
-import responsibilityPatterns.proxy.TxProxyHandler;
+import responsibility.proxy.Client;
+import responsibility.proxy.Customer;
+import responsibility.proxy.CustomerService;
+import responsibility.proxy.CustomerServiceImpl;
+import responsibility.proxy.CustomerServiceSecurityProxy;
+import responsibility.proxy.CustomerServiceTxProxy;
+import responsibility.proxy.SecurityProxyHandler;
+import responsibility.proxy.TxProxyHandler;
 
 /**
  * 

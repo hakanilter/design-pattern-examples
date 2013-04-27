@@ -4,8 +4,8 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
-import constructionPatterns.prototype.Menu;
-import constructionPatterns.prototype.Tea;
+import constructional.prototype.Menu;
+import constructional.prototype.Tea;
 
 /**
  *

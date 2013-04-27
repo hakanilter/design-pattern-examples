@@ -5,11 +5,11 @@ import java.util.List;
 
 import org.junit.Test;
 
-import operationPatterns.strategy.animal.Cat;
-import operationPatterns.strategy.animal.Fish;
-import operationPatterns.strategy.animal.FlyingFish;
-import operationPatterns.strategy.base.Animal;
-import operationPatterns.strategy.base.Environment;
+import operational.strategy.animal.Cat;
+import operational.strategy.animal.Fish;
+import operational.strategy.animal.FlyingFish;
+import operational.strategy.base.Animal;
+import operational.strategy.base.Environment;
 
 /**
  * If, else, switch gibi ifadeler coklasmissa burada 
