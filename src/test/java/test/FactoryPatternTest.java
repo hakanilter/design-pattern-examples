@@ -18,7 +18,7 @@ public class FactoryPatternTest
 	@Test
 	public void test()
 	{
-		Cook cook1 = CookFactory.getNorhernCook();
+		Cook cook1 = CookFactory.getNorthernCook();
 		System.out.println(cook1.createHamburger());
 		System.out.println(cook1.createSoup());
 		
