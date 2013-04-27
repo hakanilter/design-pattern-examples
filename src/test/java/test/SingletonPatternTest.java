@@ -3,7 +3,7 @@ package test;
 import org.junit.Test;
 
 import singleton.Car;
-import singleton.CarFactory;
+import singleton.EagerInitializationSingletonCarFactory;
 
 /**
  * 
@@ -18,7 +18,7 @@ public class SingletonPatternTest
 	{
 		// Car car = new Car();
 		
-		CarFactory carFactory = CarFactory.getInstance();
+		EagerInitializationSingletonCarFactory carFactory = EagerInitializationSingletonCarFactory.getInstance();
 		Car car = carFactory.getCar();
 		System.out.println(car);
 	}
