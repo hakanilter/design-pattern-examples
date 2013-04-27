@@ -24,10 +24,10 @@ public class ObserverPatternTest
 		NewsPaper newsPaper = new NewsPaper();
 		NewsSite newsSite = new NewsSite();
 		
-		newsAgency.register(newsPaper);
+		newsAgency.addObserver(newsPaper);
 		newsAgency.notifyRecentNews("this is news 1");
 		
-		newsAgency.register(newsSite);
+		newsAgency.addObserver(newsSite);
 		newsAgency.notifyRecentNews("this is news 2");
 	}
 }

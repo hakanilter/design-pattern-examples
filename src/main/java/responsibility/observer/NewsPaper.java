@@ -1,9 +1,12 @@
 package responsibility.observer;
 
-public class NewsPaper implements Subscriber 
+import java.util.Observable;
+import java.util.Observer;
+
+public class NewsPaper implements Observer
 {
 	@Override
-	public void update(String news) {
-		System.out.println("newspaper notified:" + news);
+	public void update(Observable o, Object arg) {
+		System.out.println("newspaper notified: " + arg);
 	}
 }
