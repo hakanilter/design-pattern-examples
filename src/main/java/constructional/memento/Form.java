@@ -31,6 +31,7 @@ public class Form
 		this.surname = memento.surname;
 	}
 	
+	// internal class
 	public static class FormMemento implements Serializable 
 	{
 		private static final long serialVersionUID = -7954212659831196188L;
