@@ -10,7 +10,7 @@ import java.util.List;
 
 public abstract class DBTemplate<T> 
 {
-	protected abstract T processRow(ResultSet rs);
+	protected abstract T processRow(ResultSet rs) throws SQLException;
 	
 	public List<T> execute(String sql) throws SQLException
 	{
