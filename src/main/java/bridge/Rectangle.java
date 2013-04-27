@@ -1,18 +1,13 @@
 package bridge;
 
-public class Rectangle 
+public class Rectangle extends Shape 
 {
-	private ImageEditor imageEditor;
-	
+	@Override
 	public void draw()
 	{
 		imageEditor.drawLine();
 		imageEditor.drawLine();
 		imageEditor.drawLine();
 		imageEditor.drawLine();
-	}
-	
-	public void setImageEditor(ImageEditor imageEditor) {
-		this.imageEditor = imageEditor;
 	}
 }

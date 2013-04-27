@@ -2,7 +2,7 @@ package adapter;
 
 import oodp.philips.Philips;
 
-public class PhillipsLampAdapter implements Lamp 
+public class PhilipsLampAdapter implements Lamp 
 {
 	private Philips lamp = new Philips();
 

@@ -1,6 +1,5 @@
 package bridge;
 
-import oodp.cizim1.CizimProgramiV1;
 import oodp.cizim2.CizimProgramiV2;
 
 public class ImageEditor2 implements ImageEditor 
